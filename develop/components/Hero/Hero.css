@@ -15,16 +15,8 @@
   .hero {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
-    /* grid-template-columns: repeat(auto-fill, minmax(720px, max-content)); */
     justify-items: start;
-    /* gap: 0; */
   }
-}
-
-/**------------------- 
-**    HERO IMAGE
---------------------*/
-.hero__image {
 }
 
 /**------------------- 
@@ -78,29 +70,10 @@
 
   .hero__title {
     font-size: 32px;
-    /* max-width: clamp(13ch, 100%, 19ch); */
   }
 
   .hero__text {
     font-size: 16px;
     max-width: clamp(23ch, 100%, 50ch);
   }
-}
-
-/**------------------- 
-**    CTA BUTTON
---------------------*/
-.btn--cta {
-  background-color: white;
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.4);
-  color: hsl(var(--clr-violet), 0.7);
-  cursor: pointer;
-  padding: 0.5rem 4rem;
-}
-
-.btn--cta:hover {
-  background-color: hsl(var(--clr-soft-magenta));
-  color: white;
 }

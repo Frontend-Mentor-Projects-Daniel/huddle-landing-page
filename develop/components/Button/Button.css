@@ -1,0 +1,14 @@
+.btn--cta {
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.4);
+  color: hsl(var(--clr-violet), 0.7);
+  cursor: pointer;
+  padding: 0.5rem 4rem;
+}
+
+.btn--cta:hover {
+  background-color: hsl(var(--clr-soft-magenta));
+  color: white;
+}
