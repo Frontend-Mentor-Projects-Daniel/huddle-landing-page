@@ -58,15 +58,37 @@ select {
 **   CUSTOM PROPS
 --------------------*/
 :root {
-/* COLOURS */
+  /* COLOURS */
+  --clr-violet: 257, 40%, 49%;
+  --clr-soft-magenta: 300, 69%, 71%;
 
   /* FONT FAMILY */
+  --ff-poppins: 'Poppins', sans-serif;
+  --ff-open-sans: 'Open Sans', sans-serif;
 
   /* FONT SIZE */
+  --fs-title: 1.5rem;
+  --fs-body: 1rem;
 
   /* FONT WEIGHT */
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+}
 
-  /* BREAKPOINTS */
+@media only screen and (min-width: 48em) {
+  :root {
+    /* FONT SIZE */
+    /* --fs-title: ;
+    --fs-body: ; */
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  :root {
+    /* FONT SIZE */
+    /* --fs-title: ;
+    --fs-body: ; */
+  }
 }
 
 /**------------------- 
@@ -77,13 +99,10 @@ select {
 **     GENERAL
 --------------------*/
 body {
+  font-family: var(--ff-open-sans);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
 }
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100vw;
-  min-height: 100vh;
 }
