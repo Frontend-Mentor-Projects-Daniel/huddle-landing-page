@@ -94,10 +94,7 @@ select {
 /**------------------- 
 **    UTILITIES
 --------------------*/
-/* TODO: If this doesn't end up looking nice by the end, replace it with media queries */
 .container {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
   padding-left: calc(1.25rem + 5vw);
   padding-right: calc(1.25rem + 5vw);
 }
@@ -144,9 +141,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
-}
-
-@media only screen and (min-width: 48em) {
 }
 
 /**--------------------- 
