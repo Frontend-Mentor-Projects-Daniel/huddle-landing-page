@@ -9,6 +9,19 @@
 }
 
 /**------------------- 
+**     LAYOUT
+--------------------*/
+@media only screen and (min-width: 48em) {
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(720px, max-content)); */
+    justify-items: start;
+    /* gap: 0; */
+  }
+}
+
+/**------------------- 
 **    HERO IMAGE
 --------------------*/
 .hero__image {
@@ -29,6 +42,7 @@
   font-family: var(--ff-poppins);
   font-size: var(--fs-title);
   font-weight: var(--fw-semi-bold);
+  max-width: clamp(13ch, 100%, 19ch);
   text-align: center;
 }
 
@@ -37,7 +51,40 @@
   font-family: var(--ff-open-sans);
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
+  max-width: clamp(23ch, 100%, 33ch);
+  max-width: clamp(23ch, 100%, 50ch);
   text-align: center;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero__form {
+    align-items: flex-start;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    text-align: start;
+  }
+
+  .hero__text {
+    font-size: 16px;
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .hero__form {
+  }
+
+  .hero__title {
+    font-size: 32px;
+    /* max-width: clamp(13ch, 100%, 19ch); */
+  }
+
+  .hero__text {
+    font-size: 16px;
+    max-width: clamp(23ch, 100%, 50ch);
+  }
 }
 
 /**------------------- 
