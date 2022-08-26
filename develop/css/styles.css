@@ -132,3 +132,37 @@ body {
 .main {
   margin-top: 4rem;
 }
+
+/**--------------------- 
+** SOCIAL MEDIA ICONS
+----------------------*/
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-top: 3rem;
+}
+
+.social-icon {
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
+}
+.social-icon:hover {
+  border: 1px solid hsl(var(--clr-soft-magenta));
+}
+
+.icofont-facebook,
+.icofont-twitter,
+.icofont-instagram {
+  color: white;
+}
+
+.social-icon:hover .icofont-facebook,
+.social-icon:hover .icofont-twitter,
+.social-icon:hover .icofont-instagram {
+  color: hsl(var(--clr-soft-magenta));
+}
