@@ -12,6 +12,9 @@
       href="./develop/assets/images/favicon-32x32.png"
     />
 
+    <!-- ICON FONT -->
+    <link rel="stylesheet" href="./develop/assets/icofont/icofont.min.css" />
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,15 +23,13 @@
       rel="stylesheet"
     />
 
-    <!-- ICON FONT -->
-    <link rel="stylesheet" href="./develop/assets/icofont/icofont.min.css" />
-
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./develop/css/styles.css" />
 
     <!-- CUSTOM JS -->
     <script src="./develop/components/Logo/Logo.js" type="module"></script>
     <script src="./develop/components/Hero/Hero.js" type="module"></script>
+    <script src="./develop/components/SocialIcon/SocialIcon.js"></script>
 
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
@@ -56,15 +57,13 @@
       </main>
       <section class="social-media-icons">
         <div class="social-icons">
-          <div class="social-icon">
-            <i class="icofont-facebook icofont-1x"></i>
-          </div>
-          <div class="social-icon">
-            <i class="icofont-twitter icofont-1x"></i>
-          </div>
-          <div class="social-icon">
-            <i class="icofont-instagram icofont-1x"></i>
-          </div>
+          <social-icon-component
+            icon="icofont-facebook"
+          ></social-icon-component>
+          <social-icon-component icon="icofont-twitter"></social-icon-component>
+          <social-icon-component
+            icon="icofont-instagram"
+          ></social-icon-component>
         </div>
       </section>
 
