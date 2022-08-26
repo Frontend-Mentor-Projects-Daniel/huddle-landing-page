@@ -109,7 +109,7 @@ body {
   background-image: url(../assets/images/bg-mobile.svg);
   background-color: hsl(var(--clr-violet));
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   font-family: var(--ff-open-sans);
   font-size: var(--fs-body);
@@ -125,3 +125,10 @@ body {
 /**------------------- 
 **     HEADER
 --------------------*/
+
+/**------------------- 
+**      MAIN
+--------------------*/
+.main {
+  margin-top: 4rem;
+}

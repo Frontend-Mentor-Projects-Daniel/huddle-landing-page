@@ -1,0 +1,59 @@
+/**------------------- 
+**      HERO
+--------------------*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+/**------------------- 
+**    HERO IMAGE
+--------------------*/
+.hero__image {
+}
+
+/**------------------- 
+**    HERO FORM
+--------------------*/
+.hero__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.hero__title {
+  color: white;
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+}
+
+.hero__text {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--ff-open-sans);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  text-align: center;
+}
+
+/**------------------- 
+**    CTA BUTTON
+--------------------*/
+.btn--cta {
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.4);
+  color: hsl(var(--clr-violet), 0.7);
+  cursor: pointer;
+  padding: 0.5rem 4rem;
+}
+
+.btn--cta:hover {
+  background-color: hsl(var(--clr-soft-magenta));
+  color: white;
+}
