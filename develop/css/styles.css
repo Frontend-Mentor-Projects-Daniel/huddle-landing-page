@@ -94,15 +94,34 @@ select {
 /**------------------- 
 **    UTILITIES
 --------------------*/
+/* TODO: If this doesn't end up looking nice by the end, replace it with media queries */
+.container {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: calc(1.25rem + 5vw);
+  padding-right: calc(1.25rem + 5vw);
+}
 
 /**------------------- 
 **     GENERAL
 --------------------*/
 body {
+  background-image: url(../assets/images/bg-mobile.svg);
+  background-color: hsl(var(--clr-violet));
+  background-repeat: no-repeat;
+  background-size: cover;
+
   font-family: var(--ff-open-sans);
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
 }
 
-.main {
+@media only screen and (min-width: 48em) {
+  body {
+    background-image: url(../assets/images/bg-desktop.svg);
+  }
 }
+
+/**------------------- 
+**     HEADER
+--------------------*/
